@@ -146,7 +146,7 @@ void setup() {
   Serial.println();
   WiFi.mode(WIFI_AP_STA);
   #ifdef ESP32
-  esp_wifi_set_mac(ESP_IF_WIFI_AP, &mac[0]);
+  esp_wifi_set_mac(WIFI_IF_AP, &mac[0]);
   #elif defined(ESP8266)
   wifi_set_macaddr(SOFTAP_IF, &mac[0]);
   #endif
